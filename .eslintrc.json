@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "plugins": ["jsdoc"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@shopify/esnext",
+    "plugin:@shopify/node",
+    "plugin:jsdoc/recommended-error",
+    "plugin:@shopify/prettier",
+    "prettier"
+  ],
+  "rules": {
+    "node/shebang": 0
+  },
+  "ignorePatterns": ["node_modules/**/*", "dist/**/*"]
+}

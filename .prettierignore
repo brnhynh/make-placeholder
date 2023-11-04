@@ -1,0 +1,17 @@
+# version control
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# artifacts
+build
+coverage
+dist
+
+# misc
+CHANGELOG.md
+LICENSE
+
+# html
+*.html
