@@ -73,6 +73,29 @@ Generate a 128x128px image placeholder and save it to a specific directory:
 make-placeholder img 128 -o "/path/to/folder/placeholder.jpeg"
 ```
 
+#### Output With Different Format
+
+The supported file formats are: `JPEG`(default) and `PNG`
+
+##### Save to a Specific Directory:
+
+Use the following command to specify a directory path and generate an image with a dynamic filename:
+
+```bash
+make-placeholder img 64 -o "/path/to/folder/*.png"
+```
+This command will create an image named "64x64.png" in the folder you specified.
+
+##### Save in the Current Directory:
+
+If you want to save the PNG image in the current directory, use the following command:
+
+```bash
+make-placeholder img 64 -o "*.png"
+```
+This will create an image named "64x64.png" in your current working directory.
+
+
 ## Issues
 
 If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/brnhynh/make-placeholder/issues).

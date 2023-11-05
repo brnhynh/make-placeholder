@@ -53,7 +53,7 @@ export async function makeImage(width, height, options) {
       }
 
       // Use the name from outputPath instead of the defaultOutputName
-      if (name.length !== 0) {
+      if (name.length !== 0 && name !== '*') {
         outputName = name;
       }
     }
