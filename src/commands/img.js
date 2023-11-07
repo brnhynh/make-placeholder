@@ -14,21 +14,11 @@ export const imgCommand = new Command('img')
     'Background color for the image. (e.g., "#FF0000")',
     '#cccccc'
   )
+  .option('-t, --text <text>', 'Text to display on the image.')
   .option(
     '-c, --text-color <text_color>',
     'Text color for the text. (e.g., "#0000FF")',
     '#909090'
-  )
-  .option('-t, --text <text>', 'Text to display on the image.')
-  .option(
-    '--font-size <font_size>',
-    'Font size for the text. (e.g., "24px" or "auto")',
-    'auto'
-  )
-  .option(
-    '--font-family <font_family>',
-    'Font family for the text. (e.g., "Arial")',
-    'Arial'
   )
   .option(
     '-o, --output-path <output_path>',

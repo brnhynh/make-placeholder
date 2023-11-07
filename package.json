@@ -1,6 +1,6 @@
 {
   "name": "make-placeholder",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "CLI for creating placeholders offline.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -52,13 +52,16 @@
       "outputFormat": "esmodule",
       "optimize": true,
       "sourceMap": false,
-      "includeNodeModules": false
+      "includeNodeModules": [
+        "commander",
+        "jimp"
+      ]
     }
   },
   "homepage": "https://github.com/brnhynh/make-placeholder#readme",
   "dependencies": {
-    "canvas": "^2.11.2",
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "jimp": "^0.22.10"
   },
   "devDependencies": {
     "@shopify/eslint-plugin": "^43.0.0",

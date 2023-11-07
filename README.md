@@ -32,14 +32,16 @@ make-placeholder img <width> [height] [options]
 - `[height]` (in pixels): The height of the image (optional, defaults to the width).
 - `[options]`: Additional options to customize the image placeholder.
 
+**Note**: The units for `<width>` and `[height]` are expressed in pixels (px).
+
 ### Command Flags
 
 - `-b, --background <background>`: Set the background color for the image (e.g., "#FF0000"). Default: `#cccccc`.
 - `-c, --text-color <text_color>`: Define the text color for the text on the image (e.g., "#0000FF"). Default: `#909090`.
 - `-t, --text <text>`: Specify the text to display on the image.
-- `--font-size <font_size>`: Set the font size for the text (e.g., "24px" or "auto"). Default: `auto`.
-- `--font-family <font_family>`: Choose the font family for the text (e.g., "Arial"). Default: `Arial`.
 - `-o, --output-path <output_path>`: Set the output path for the image (e.g., "/path/to/output/example.jpeg").
+
+**Note**: When specifying the value for any color flags, you can set the color in various formats, including Hex, RGB, RGBA, HSL, HSLA, HSV, HSVA, and Named colors.
 
 ### Examples
 
