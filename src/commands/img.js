@@ -11,13 +11,13 @@ export const imgCommand = new Command('img')
   )
   .option(
     '-b, --background <background>',
-    'Background color for the image. (e.g., "#FF0000")',
+    'Background color for the image.',
     '#cccccc'
   )
   .option('-t, --text <text>', 'Text to display on the image.')
   .option(
     '-c, --text-color <text_color>',
-    'Text color for the text. (e.g., "#0000FF")',
+    'Text color for the text.',
     '#909090'
   )
   .option(

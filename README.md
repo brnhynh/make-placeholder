@@ -18,11 +18,11 @@ npm install -g make-placeholder
 
 ## Usage
 
-#### Command
+### `img` command
 
 The primary command provided by **make-placeholder** is `img`. You can use this command to generate image placeholders with various customization options.
 
-### Command Syntax
+#### Syntax
 
 ```bash
 make-placeholder img <width> [height] [options]
@@ -34,14 +34,14 @@ make-placeholder img <width> [height] [options]
 
 **Note**: The units for `<width>` and `[height]` are expressed in pixels (px).
 
-### Command Flags
+#### Options
 
-- `-b, --background <background>`: Set the background color for the image (e.g., "#FF0000"). Default: `#cccccc`.
-- `-c, --text-color <text_color>`: Define the text color for the text on the image (e.g., "#0000FF"). Default: `#909090`.
+- `-b, --background <background>`: Set the background color for the image. Default: `#cccccc`.
+- `-c, --text-color <text_color>`: Define the text color for the text on the image. Default: `#909090`.
 - `-t, --text <text>`: Specify the text to display on the image.
 - `-o, --output-path <output_path>`: Set the output path for the image (e.g., "/path/to/output/example.jpeg").
 
-**Note**: When specifying the value for any color flags, you can set the color in various formats, including Hex, RGB, RGBA, HSL, HSLA, HSV, HSVA, and Named colors.
+**Note**: When specifying the value for any color options, you can set the color in various formats, including Hex, RGB, RGBA, HSL, HSLA, HSV, HSVA, and Named colors.
 
 ### Examples
 
@@ -62,7 +62,7 @@ make-placeholder img 256
 Generate a 512x256px image placeholder with a black background, white text, and a custom text message:
 
 ```bash
-make-placeholder img 512 256 -b "#000000" -c white -t "Hello, world"
+make-placeholder img 512 256 -b "#000000" -c white -t "hello world"
 ```
 
 ![Customization Example](https://github.com/brnhynh/make-placeholder/raw/main/examples/512x256.jpeg)
@@ -96,7 +96,6 @@ If you want to save the PNG image in the current directory, use the following co
 make-placeholder img 64 -o "*.png"
 ```
 This will create an image named "64x64.png" in your current working directory.
-
 
 ## Issues
 
