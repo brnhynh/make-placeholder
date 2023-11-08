@@ -1,6 +1,6 @@
 {
   "name": "make-placeholder",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "CLI for creating placeholders.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
