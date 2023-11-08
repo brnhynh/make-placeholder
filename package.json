@@ -1,7 +1,7 @@
 {
   "name": "make-placeholder",
-  "version": "0.4.0",
-  "description": "CLI for creating placeholders offline.",
+  "version": "0.5.1",
+  "description": "CLI for creating placeholders.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
