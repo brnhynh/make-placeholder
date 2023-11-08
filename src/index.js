@@ -6,7 +6,7 @@ import { imgCommand } from './commands';
 const program = new Command();
 
 program
-  .version('0.4.0')
+  .version('0.5.0')
   .description('Generate placeholders.')
   .addCommand(imgCommand)
   .parse();

@@ -23,8 +23,14 @@ export async function makeImage(width, height, options) {
       const { dir, name, ext } = parse(options.outputPath);
       outputDirectory = dir;
 
-      if (ext && ext !== '.jpeg' && ext !== '.png') {
-        throw new Error('Invalid file path or extension (only .jpeg or .png)');
+      const supportedExtensions = ['.jpeg', '.png', '.bmp', '.tiff', '.gif'];
+
+      if (supportedExtensions.indexOf(ext) === -1) {
+        throw new Error(
+          `Invalid file path or extension (only ${supportedExtensions.join(
+            ', '
+          )})`
+        );
       } else {
         outputFormat = ext;
       }
