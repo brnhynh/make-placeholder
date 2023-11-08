@@ -1,6 +1,6 @@
 # make-placeholder
 
-**make-placeholder** is a command-line tool designed for generating placeholders offline for your projects.
+**make-placeholder** is a command-line tool designed for generating placeholders for your projects.
 
 ## Getting Started
 
@@ -77,7 +77,7 @@ make-placeholder img 128 -o "/path/to/folder/placeholder.jpeg"
 
 #### Output With Different Format
 
-The supported file formats are: `JPEG`(default) and `PNG`
+The supported file formats are: `JPEG`(default), `PNG`, `BMP`, `TIFF`, and `GIF`
 
 ##### Save to a Specific Directory:
 
