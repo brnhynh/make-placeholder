@@ -35,9 +35,9 @@ export async function makeImage(width, height, options) {
         outputFormat = ext;
       }
 
-      // Use the name from options.outputPath instead of the defaultOutputName
-      if (name.length !== 0 && name !== '*') {
-        outputName = name;
+      // Use the name from parsing options.outputPath instead of the defaultOutputName
+      if (name.length !== 0) {
+        outputName = name.replace(/\*$/, defaultOutputName);
       }
     }
 

@@ -39,7 +39,7 @@ make-placeholder img <width> [height] [options]
 - `-b, --background <background>`: Set the background color for the image. Default: `#cccccc`.
 - `-c, --text-color <text_color>`: Define the text color for the text on the image. Default: `#909090`.
 - `-t, --text <text>`: Specify the text to display on the image.
-- `-o, --output-path <output_path>`: Set the output path for the image (e.g., "/path/to/output/example.jpeg").
+- `-o, --output-path <output_path>`: Set the output path for the image (e.g., "/path/to/output/example.jpeg"). If you include * in the file name, it will be replaced with the dimension of the image (only the last * will be replaced).
 
 **Note**: When specifying the value for any color options, you can set the color in various formats, including Hex, RGB, RGBA, HSL, HSLA, HSV, HSVA, and Named colors.
 
